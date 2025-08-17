@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Shabnam";
+  src: url("../../fonts/Shabnam/Farsi-Digits/Shabnam-FD.eot") format("eot"), url("../../fonts/Shabnam/Farsi-Digits/Shabnam-FD.woff") format("woff"), url("../../fonts/Shabnam/Farsi-Digits/Shabnam-FD.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: Shabnam;
+  border: 1px solid red;
+}/*# sourceMappingURL=style.css.map */
