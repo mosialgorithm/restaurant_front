@@ -1,0 +1,65 @@
+#nav {
+    .navbar-toggler{
+        color: $color-1 !important;
+    }
+    // border: 1px solid black;
+    .navbar {
+        background-color: transparent !important;
+
+        .navbar-nav {
+            // border: 1px solid red;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            .nav-item {
+                .nav-link {
+                    color: $color-5;
+                    font-size: 18px;
+
+                    &:hover{
+                        color: $color-1;
+                        font-weight: bold;
+                    }
+                }
+                .dropdown-menu{
+                    background-color: transparent !important;
+                    border: 1px solid $color-5;
+
+                    li{
+                        background-color: transparent;
+                        &:hover{
+                            .dropdown-item{
+                                background-color: transparent;
+                                color: $color-1;
+                                font-weight: bold;
+                            }
+                        }
+                        a.dropdown-item{
+                            color: $color-5;
+                        }
+                    }
+                }
+            }
+        }
+
+        #shortcut-icon{
+            // border: 1px solid green;
+            a{
+                text-decoration: none;
+                color: $color-5;
+
+                &:hover{
+                    color: $color-1;
+                    font-weight: bold;
+                }
+
+                .badge{
+                    background-color: $color-1 !important;
+                }
+            }
+
+        }
+    }
+
+}

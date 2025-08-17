@@ -1,0 +1,42 @@
+#menu {
+    // border: 1px solid red;
+    min-height: 300px;
+    margin-top: 200px !important;
+
+    .buy-item {
+        border: 2px solid $color-1;
+        border-radius: 10px;
+        padding: 5px;
+        // margin: 10px;
+    }
+}
+
+#banner {
+    // border: 1px solid red;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin-bottom: 100px;
+    // background-image: url('../../images/wide/banner-2.jpg');
+    // // min-height: 500px;
+    // background-attachment: fixed;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+
+    .banner-color{
+        width: 100%;
+        height: 400px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #0081a769;
+    }
+
+    img{
+        // position: fixed;
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+}

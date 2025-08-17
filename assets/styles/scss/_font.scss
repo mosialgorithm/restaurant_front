@@ -1,9 +1,31 @@
 @font-face {
     font-family: "Shabnam"; // Give your font a unique name
     src: 
+    url("../../fonts/Shabnam/Shabnam.eot") format("eot"),
+    url("../../fonts/Shabnam/Shabnam.woff") format("woff"),
+    url("../../fonts/Shabnam/Shabnam.woff2") format("woff2");
+    font-weight: normal; // Specify the font's weight
+    font-style: normal; // Specify the font's style
+    font-display: swap; // Optimize font loading
+}
+
+@font-face {
+    font-family: "ShabnamDigits"; // Give your font a unique name
+    src: 
     url("../../fonts/Shabnam/Farsi-Digits/Shabnam-FD.eot") format("eot"),
     url("../../fonts/Shabnam/Farsi-Digits/Shabnam-FD.woff") format("woff"),
     url("../../fonts/Shabnam/Farsi-Digits/Shabnam-FD.woff2") format("woff2");
+    font-weight: normal; // Specify the font's weight
+    font-style: normal; // Specify the font's style
+    font-display: swap; // Optimize font loading
+}
+
+@font-face {
+    font-family: "Vazir"; // Give your font a unique name
+    src: 
+    url("../../fonts/vazir/Vazir.eot") format("eot"),
+    url("../../fonts/vazir/Vazir.woff") format("woff"),
+    url("../../fonts/vazir/Vazir.woff2") format("woff2");
     font-weight: normal; // Specify the font's weight
     font-style: normal; // Specify the font's style
     font-display: swap; // Optimize font loading

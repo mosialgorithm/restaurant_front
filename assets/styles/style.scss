@@ -1,9 +1,20 @@
+@import "scss/variables";
 @import "scss/font";
+@import "scss/nav";
+@import "scss/carousel";
+@import "scss/list_menu";
+@import "scss/menu";
+@import "scss/cart";
+@import "scss/footer";
+
+
 
 
 body{
-    font-family: Shabnam;
-    border: 1px solid red;
+    font-family: Shabnam ShabnamDigits;
+    // font-family: Vazir;
+    // border: 1px solid red;
     // background-color: aqua;
+    // background-color: $color-3;
 
 }
