@@ -1,0 +1,52 @@
+
+#about-us{
+    margin-top: 100px;
+
+    p.title{
+        font-size: 20px;
+        padding: 10px;
+        background-color: $color-1;
+        border-radius: 10px;
+        color: $color-3;
+    }
+
+    hr{
+            height: 2px;
+            background-color: $color-5;
+            margin-top: 50px;
+        }
+
+    .about-us-box{
+        border: 2px solid $color-1;
+        border-radius: 10px;
+
+        img{
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .info{
+            // border: 2px solid $color-1;
+            border-radius: 10px;
+            padding: 10px;
+            padding-top: 15px;
+            // margin-top: 10px;
+            text-align: center;
+            direction: rtl;
+            text-align: right;
+            margin: auto;
+
+            .fa{
+                color: $color-1;
+                font-size: 18px;
+            }
+
+            a{
+                text-decoration: none;
+                cursor: pointer;
+                color: red;
+            }
+        }
+    }
+}
