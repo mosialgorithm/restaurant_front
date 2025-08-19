@@ -19,8 +19,15 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: Yekan;
+  src: url("../../fonts/Yekan/Yekan.eot");
+  src: url("../../fonts/Yekan/Yekan.eot?#iefix") format("FontName-opentype"), url("../../fonts/Yekan/Yekan.woff") format("woff"), url("../../fonts/Yekan/Yekan.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 #nav .navbar-toggler {
-  color: #0081a7 !important;
+  color: #ef476f !important;
 }
 #nav .navbar {
   background-color: transparent !important;
@@ -31,44 +38,50 @@
   justify-content: center;
 }
 #nav .navbar .navbar-nav .nav-item .nav-link {
-  color: #f07167;
+  color: #ef476f;
   font-size: 18px;
 }
 #nav .navbar .navbar-nav .nav-item .nav-link:hover {
-  color: #0081a7;
-  font-weight: bold;
+  color: #118ab2;
 }
 #nav .navbar .navbar-nav .nav-item .dropdown-menu {
-  background-color: transparent !important;
-  border: 1px solid #f07167;
+  background-color: #ef476f !important;
 }
 #nav .navbar .navbar-nav .nav-item .dropdown-menu li {
   background-color: transparent;
 }
 #nav .navbar .navbar-nav .nav-item .dropdown-menu li:hover .dropdown-item {
   background-color: transparent;
-  color: #0081a7;
-  font-weight: bold;
+  color: #073b4c;
 }
 #nav .navbar .navbar-nav .nav-item .dropdown-menu li a.dropdown-item {
-  color: #f07167;
+  color: #ffd166;
 }
 #nav .navbar #shortcut-icon a {
   text-decoration: none;
-  color: #f07167;
+  color: #ef476f;
 }
 #nav .navbar #shortcut-icon a:hover {
-  color: #0081a7;
+  color: #06d6a0;
   font-weight: bold;
 }
 #nav .navbar #shortcut-icon a .badge {
-  background-color: #0081a7 !important;
+  background-color: #ef476f !important;
 }
 
+@media (min-width: 768px) {
+  .nav-item .nav-link {
+    font-weight: bold;
+  }
+  .nav-item .dropdown-menu li .dropdown-item {
+    font-weight: bold;
+  }
+}
 #carousel {
   height: 50vh;
   overflow: hidden;
   position: relative;
+  border-radius: 10px;
 }
 #carousel .carousel-color {
   position: absolute;
@@ -76,7 +89,7 @@
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 129, 167, 0.2509803922);
+  background-color: rgba(7, 59, 76, 0.5294117647);
   z-index: 10;
 }
 #carousel .carousel-inner .carousel-item img {
@@ -88,15 +101,16 @@
 #carousel .carousel-inner .carousel-item .carousel-caption {
   z-index: 20;
   bottom: 8.25rem !important;
-  background-color: rgba(240, 113, 103, 0.6196078431);
+  background-color: #073b4c;
+  border-radius: 10px;
 }
 #carousel .carousel-inner .carousel-item .carousel-caption h4 {
-  color: #fdfcdc;
+  color: #ffd166;
 }
 #carousel .carousel-inner .carousel-item .carousel-caption p {
   font-size: 20px;
   font-weight: bold;
-  color: #fdfcdc;
+  color: #ef476f;
 }
 
 @media (min-width: 768px) {
@@ -112,15 +126,14 @@
 }
 .menu {
   min-height: 300px;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .menu .list-title {
   padding: 10px;
   font-size: 20px;
   text-align: right;
-  border: 1px solid #0081a7;
-  background-color: #0081a7;
-  color: whitesmoke;
+  background-color: #ef476f;
+  color: #ffd166;
   font-weight: bold;
   border-radius: 10px;
   height: 55px;
@@ -141,11 +154,11 @@
   position: absolute;
   top: 0;
   right: 0;
-  background-color: rgba(0, 129, 167, 0.2509803922);
+  background-color: rgba(7, 59, 76, 0.5294117647);
 }
 .menu .box-list p.box-title {
-  background-color: #f07167;
-  color: #fdfcdc;
+  background-color: #073b4c;
+  color: #06d6a0;
   border-radius: 10px;
   font-size: 18px;
   font-weight: bold;
@@ -161,7 +174,7 @@
   width: 100%;
   padding: 5px;
   z-index: 10;
-  color: #fed9b7;
+  color: #ffd166;
   font-size: 16px;
   font-weight: bold;
   display: none;
@@ -175,19 +188,21 @@
 
 #menu {
   min-height: 300px;
-  margin-top: 200px !important;
+  margin-top: 50px !important;
 }
 #menu .buy-item {
-  border: 2px solid #0081a7;
+  border: 2px solid #ef476f;
   border-radius: 10px;
   padding: 5px;
 }
 
 #banner {
   width: 100%;
-  height: 300px;
+  height: 400px;
+  overflow: hidden;
   position: relative;
   margin-bottom: 100px;
+  border-radius: 10px;
 }
 #banner .banner-color {
   width: 100%;
@@ -211,9 +226,9 @@
 #cart p.title {
   font-size: 20px;
   padding: 10px;
-  background-color: #0081a7;
+  background-color: #ef476f;
   border-radius: 10px;
-  color: #fdfcdc;
+  color: #06d6a0;
 }
 #cart #cart-order {
   padding: 0;
@@ -230,7 +245,7 @@
 #cart #cart-payment {
   padding: 15px;
   margin: 0;
-  border: 2px solid #0081a7;
+  border: 2px solid #ef476f;
   border-radius: 10px;
   height: 300px;
 }
@@ -244,9 +259,9 @@
 #contact-us p.title {
   font-size: 20px;
   padding: 10px;
-  background-color: #0081a7;
+  background-color: #073b4c;
   border-radius: 10px;
-  color: #fdfcdc;
+  color: #06d6a0;
 }
 #contact-us #form {
   border-radius: 10px;
@@ -254,7 +269,7 @@
   margin-bottom: 10px;
 }
 #contact-us #info {
-  border: 2px solid #0081a7;
+  border: 2px solid #073b4c;
   border-radius: 10px;
   padding: 10px;
 }
@@ -270,10 +285,11 @@
 }
 #contact-us #info ul li span {
   font-size: 18px;
+  color: #073b4c;
 }
 #contact-us #info ul li .fa {
   width: 25px;
-  color: #f07167;
+  color: #118ab2;
 }
 #contact-us #map {
   border-radius: 10px;
@@ -287,17 +303,17 @@
 #about-us p.title {
   font-size: 20px;
   padding: 10px;
-  background-color: #0081a7;
+  background-color: #073b4c;
   border-radius: 10px;
-  color: #fdfcdc;
+  color: #06d6a0;
 }
 #about-us hr {
   height: 2px;
-  background-color: #f07167;
+  background-color: #073b4c;
   margin-top: 50px;
 }
 #about-us .about-us-box {
-  border: 2px solid #0081a7;
+  border: 2px solid #073b4c;
   border-radius: 10px;
 }
 #about-us .about-us-box img {
@@ -316,13 +332,54 @@
   margin: auto;
 }
 #about-us .about-us-box .info .fa {
-  color: #0081a7;
+  color: #118ab2;
   font-size: 18px;
 }
 #about-us .about-us-box .info a {
   text-decoration: none;
   cursor: pointer;
   color: red;
+}
+
+#images-banner {
+  margin-top: 100px;
+  min-height: 140px;
+}
+#images-banner .box-image {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+#images-banner .box-image img {
+  width: 100px;
+}
+#images-banner .box-message {
+  padding: 0;
+  border-radius: 10px;
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+}
+#images-banner .box-message p {
+  padding-top: 30px;
+  font-size: 20px;
+  color: whitesmoke;
+  font-weight: bold;
+}
+#images-banner .box-1 {
+  background-color: #ef476f;
+}
+#images-banner .box-2 {
+  background-color: #ffd166;
+}
+#images-banner .box-3 {
+  background-color: #06d6a0;
+}
+#images-banner .box-4 {
+  background-color: #118ab2;
 }
 
 #footer {
@@ -341,6 +398,7 @@
   width: 100%;
   overflow: hidden;
   position: relative;
+  border-radius: 10px;
 }
 #footer .box-footer video {
   width: 100%;
@@ -349,7 +407,7 @@
      object-fit: cover;
 }
 #footer .box-footer .box-color {
-  background-color: rgba(0, 129, 167, 0.6);
+  background-color: rgba(7, 59, 76, 0.5294117647);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -371,9 +429,9 @@
   margin: 20px;
 }
 #footer .box-footer .box-links .links p {
-  color: #fed9b7;
+  color: #ffd166;
   font-weight: bold;
-  border-bottom: 2px solid #fed9b7;
+  border-bottom: 2px solid #ffd166;
   padding-bottom: 10px;
   font-size: 18px;
   font-weight: bold;
@@ -389,7 +447,7 @@
 }
 #footer .box-footer .box-links .links ul li a {
   text-decoration: none;
-  color: white;
+  color: whitesmoke;
   text-align: right;
 }
 #footer .box-footer .box-links .links ul li a .title {
@@ -400,31 +458,34 @@
   font-size: 10px;
 }
 #footer .box-footer .box-links .links ul li a:hover {
-  color: #00afb9;
+  color: #ffd166;
 }
 #footer .box-footer .box-links .contact_us ul li a .fa {
   font-size: 18px;
 }
 #footer .box-footer .developer {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   width: 100%;
   position: absolute;
   bottom: 0;
+  padding-top: 10px;
   z-index: 20;
-  color: whitesmoke;
+  color: #06d6a0;
+  font-weight: bold;
+  font-size: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 #footer .box-footer .developer a {
   text-decoration: none;
-  color: whitesmoke;
-  font-weight: bold;
+  color: #06d6a0;
   font-size: 17px;
 }
 #footer .box-footer .developer a:hover {
-  color: #f07167;
+  color: #ffd166;
 }
 
 body {
-  font-family: Shabnam ShabnamDigits;
+  font-family: Shabnam, ShabnamDigits, Vazir;
 }/*# sourceMappingURL=style.css.map */

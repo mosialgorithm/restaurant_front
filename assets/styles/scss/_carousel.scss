@@ -6,6 +6,7 @@
     // margin-bottom: 100px;
     overflow: hidden;
     position: relative;
+    border-radius: 10px;
 
     .carousel-color{
         position: absolute;
@@ -13,7 +14,7 @@
         right: 0;
         width: 100%;
         height: 100%;
-        background-color: #0081a740;
+        background-color: $color-55;
         z-index: 10;
     }
 
@@ -28,14 +29,15 @@
             .carousel-caption{
                 z-index: 20;
                 bottom: 8.25rem !important;
-                background-color: #f071679e;
+                background-color: $color-5;
+                border-radius: 10px;
                 h4{
-                    color: $color-3;
+                    color: $color-2;
                 }
                 p{
                     font-size: 20px;
                     font-weight: bold;
-                    color: $color-3;
+                    color: $color-1;
                 }
             }
         }

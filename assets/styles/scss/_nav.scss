@@ -1,7 +1,8 @@
 #nav {
-    .navbar-toggler{
+    .navbar-toggler {
         color: $color-1 !important;
     }
+
     // border: 1px solid black;
     .navbar {
         background-color: transparent !important;
@@ -14,47 +15,54 @@
 
             .nav-item {
                 .nav-link {
-                    color: $color-5;
+                    color: $color-1;
                     font-size: 18px;
+                    // font-weight: bold;
 
-                    &:hover{
-                        color: $color-1;
-                        font-weight: bold;
+                    &:hover {
+                        color: $color-4;
+                        // font-weight: bold;
                     }
                 }
-                .dropdown-menu{
-                    background-color: transparent !important;
-                    border: 1px solid $color-5;
 
-                    li{
+                .dropdown-menu {
+                    // background-color: transparent !important;
+                    background-color: $color-1 !important;
+                    // border: 1px solid $color-5;
+
+                    li {
                         background-color: transparent;
-                        &:hover{
-                            .dropdown-item{
+
+                        &:hover {
+                            .dropdown-item {
                                 background-color: transparent;
-                                color: $color-1;
-                                font-weight: bold;
+                                color: $color-5;
+                                // font-weight: bold;
                             }
                         }
-                        a.dropdown-item{
-                            color: $color-5;
+
+                        a.dropdown-item {
+                            color: $color-2;
+                            // font-weight: bold;
                         }
                     }
                 }
             }
         }
 
-        #shortcut-icon{
-            // border: 1px solid green;
-            a{
-                text-decoration: none;
-                color: $color-5;
+        #shortcut-icon {
 
-                &:hover{
-                    color: $color-1;
+            // border: 1px solid green;
+            a {
+                text-decoration: none;
+                color: $color-1;
+
+                &:hover {
+                    color: $color-3;
                     font-weight: bold;
                 }
 
-                .badge{
+                .badge {
                     background-color: $color-1 !important;
                 }
             }
@@ -62,4 +70,20 @@
         }
     }
 
+}
+
+@media (min-width: 768px) {
+    .nav-item {
+        .nav-link {
+            font-weight: bold;
+        }
+
+        .dropdown-menu {
+            li {
+                .dropdown-item {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
 }

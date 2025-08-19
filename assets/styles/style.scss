@@ -7,13 +7,15 @@
 @import "scss/cart";
 @import "scss/contact_us";
 @import "scss/about_us";
+@import "scss/images-banner";
 @import "scss/footer";
 
 
 
 
 body{
-    font-family: Shabnam ShabnamDigits;
+    font-family: Shabnam , ShabnamDigits, Vazir;
+    // font-family: Yekan;
     // font-family: Vazir;
     // border: 1px solid red;
     // background-color: aqua;

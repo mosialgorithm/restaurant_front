@@ -2,6 +2,7 @@
     margin: 0;
     margin-top: 100px;
     padding: 0;
+    
 
     .box-avatar {
         text-align: center;
@@ -17,6 +18,7 @@
         width: 100%;
         overflow: hidden;
         position: relative;
+        border-radius: 10px;
 
 
         video {
@@ -26,7 +28,7 @@
         }
 
         .box-color {
-            background-color: #0081a799;
+            background-color: $color-55;
             width: 100%;
             height: 100%;
             position: absolute;
@@ -54,9 +56,9 @@
                 margin: 20px;
 
                 p {
-                    color: $color-4;
+                    color: $color-2;
                     font-weight: bold;
-                    border-bottom: 2px solid $color-4;
+                    border-bottom: 2px solid $color-2;
                     padding-bottom: 10px;
                     font-size: 18px;
                     font-weight: bold;
@@ -74,7 +76,7 @@
 
                         a {
                             text-decoration: none;
-                            color: white;
+                            color: whitesmoke;
                             text-align: right;
                             
                             .title {
@@ -108,26 +110,34 @@
 
         .developer{
             // border: 1px solid red;
+            // background-color: $color-5;
+            
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            // font-family: Yekan !important;
             width: 100%;
             position: absolute;
             bottom: 0;
+            padding-top: 10px;
             // left: 50%;
             // transform: translate(0, 0, 0 , -50%);
             z-index: 20;
-            color: whitesmoke;
+            color: $color-3;
+            font-weight: bold;
+            font-size: 16px;
             display: flex;
             justify-content: center;
             align-items: center;
 
             a{
                 text-decoration: none;
-                color: whitesmoke;
+                color: $color-3;
                 // color: $color-5;
-                font-weight: bold;
+                // font-weight: bold;
                 font-size: 17px;
 
                 &:hover{
-                    color: $color-5;
+                    color: $color-2;
+                    
                 }
             }
         }

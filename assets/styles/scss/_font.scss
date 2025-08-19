@@ -30,3 +30,13 @@
     font-style: normal; // Specify the font's style
     font-display: swap; // Optimize font loading
 }
+
+@font-face {
+  font-family: Yekan;
+  src: url('../../fonts/Yekan/Yekan.eot');
+  src: url('../../fonts/Yekan/Yekan.eot?#iefix') format('FontName-opentype'),
+       url('../../fonts/Yekan/Yekan.woff') format('woff'),
+       url('../../fonts/Yekan/Yekan.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

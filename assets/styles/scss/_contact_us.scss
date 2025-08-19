@@ -6,7 +6,7 @@
     p.title{
         font-size: 20px;
         padding: 10px;
-        background-color: $color-1;
+        background-color: $color-5;
         border-radius: 10px;
         color: $color-3;
     }
@@ -17,8 +17,9 @@
         padding: 10px;
         margin-bottom: 10px;
     }
+
     #info{
-        border: 2px solid $color-1;
+        border: 2px solid $color-5;
         border-radius: 10px;
         padding: 10px;
         ul{
@@ -33,10 +34,12 @@
 
                 span{
                     font-size: 18px;
+                    color: $color-5;
+                    // font-weight: bold;
                 }
                 .fa{
                     width: 25px;
-                    color: $color-5;
+                    color: $color-4;
                 }
             }
         }
