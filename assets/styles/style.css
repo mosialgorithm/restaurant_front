@@ -77,6 +77,23 @@
     font-weight: bold;
   }
 }
+#userModal .modal-dialog {
+  border-radius: 10px !important;
+}
+#userModal .modal-dialog .modal-header {
+  background-color: #ef476f;
+}
+#userModal .modal-dialog .modal-header h5 {
+  color: whitesmoke;
+}
+#userModal .modal-dialog .modal-header button.btn-close {
+  font-weight: bold;
+  background-color: whitesmoke;
+}
+#userModal .modal-dialog .modal-body nav button.nav-link {
+  color: #ef476f;
+}
+
 #carousel {
   height: 50vh;
   overflow: hidden;

@@ -1,0 +1,30 @@
+#userModal {
+
+    .modal-dialog {
+        // border: 2px solid red;
+        border-radius: 10px !important;
+
+        .modal-header {
+            background-color: $color-1;
+
+            h5 {
+                color: whitesmoke;
+            }
+
+            button.btn-close {
+                font-weight: bold;
+                background-color: whitesmoke;
+            }
+        }
+
+        .modal-body {
+            nav {
+                button.nav-link {
+                    color: $color-1;
+                }
+            }
+        }
+    }
+
+
+}

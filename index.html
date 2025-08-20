@@ -28,7 +28,7 @@
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">صفحه اصلی</a>
+                            <a class="nav-link active" aria-current="page" href="./index.html">صفحه اصلی</a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -37,26 +37,27 @@
                                 منوی کافه
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">غذای اصلی</a></li>
-                                <li><a class="dropdown-item" href="#">پیش غذا </a></li>
+                                <li><a class="dropdown-item" href="./menu.html">غذای اصلی</a></li>
+                                <li><a class="dropdown-item" href="./menu.html">پیش غذا </a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#"> بستنی </a></li>
+                                <li><a class="dropdown-item" href="./menu.html"> بستنی </a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">آشنایی با همکاران</a>
+                            <a class="nav-link" href="./about-us.html">آشنایی با همکاران</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">تماس یا ما</a>
+                            <a class="nav-link" href="./contact-us.html" tabindex="-1" aria-disabled="true">تماس با
+                                ما</a>
                         </li>
                     </ul>
                     <div id="shortcut-icon" class="d-flex">
-                        <a href="#">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#userModal">
                             <span class="fa fa-user-circle-o fa-lg mx-2"></span>
                         </a>
-                        <a href="#" class="position-relative">
+                        <a href="./cart.html" class="position-relative">
                             <span class="fa fa-shopping-basket fa-lg mx-2"></span>
                             <span
                                 class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">5</span>
@@ -67,6 +68,104 @@
         </nav>
     </section>
     <!-- end nav -->
+
+    <!-- user model -->
+    <div class="modal fade" id="userModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="userModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="userModalLabel">
+                        <span class="fa fa-user-circle-o"></span>
+                        <span>مدیریت کاربران</span>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-register-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                                aria-selected="true">
+                                <span class="fa fa-edit"></span>
+                                <span>ثبت نام</span>
+                            </button>
+                            <button class="nav-link" id="nav-login-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                                aria-selected="false">
+                                <span class="fa fa-sign-in"></span>
+                                <span>ورود</span>
+                            </button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-register-tab">
+                            <form class="my-5">
+                                <div class="mb-3 row">
+                                    <label for="" class="col-4 col-form-label">نام و نام خانوادگی</label>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label for="" class="col-4 col-form-label">تلفن همراه</label>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label for="" class="col-4 col-form-label">گذرواژه</label>
+                                    <div class="col-8">
+                                        <input type="password" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label for="" class="col-4 col-form-label">تکرار گذرواژه</label>
+                                    <div class="col-8">
+                                        <input type="password" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 offset-sm-4">
+                                        <button class="btn btn-outline-success">ثبت نام</button>
+                                        <button class="btn btn-outline-danger" data-bs-dismiss="modal">انصراف</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-login-tab">
+                            <form class="my-5">
+                                <div class="mb-3 row">
+                                    <label for="phone" class="col-4 col-form-label">شماره همراه</label>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control" id="phone">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <label for="password" class="col-4 col-form-label">گذرواژه</label>
+                                    <div class="col-8">
+                                        <input type="password" class="form-control" id="password">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 offset-sm-4">
+                                        <button class="btn btn-outline-success"> ورود</button>
+                                        <button class="btn btn-outline-danger" data-bs-dismiss="modal">انصراف</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- end user model -->
 
     <!-- carousel -->
     <section id="carousel">
