@@ -57,6 +57,9 @@
 #nav .navbar .navbar-nav .nav-item .dropdown-menu li a.dropdown-item {
   color: #ffd166;
 }
+#nav .navbar #shortcut-icon {
+  width: 300px;
+}
 #nav .navbar #shortcut-icon a {
   text-decoration: none;
   color: #ef476f;
@@ -67,6 +70,26 @@
 }
 #nav .navbar #shortcut-icon a .badge {
   background-color: #ef476f !important;
+}
+#nav .dashboard {
+  border-radius: 10px;
+  background-color: #073b4c !important;
+}
+#nav .dashboard .navbar-nav .nav-item .nav-link {
+  color: whitesmoke !important;
+}
+#nav .dashboard .navbar-nav .nav-item .nav-link:hover {
+  color: #06d6a0 !important;
+}
+#nav .dashboard .navbar-nav .nav-item .dropdown-menu {
+  background-color: #073b4c !important;
+  border: 2px solid whitesmoke;
+}
+#nav .dashboard .navbar-nav .nav-item .dropdown-menu li .dropdown-item {
+  color: whitesmoke !important;
+}
+#nav .dashboard .navbar-nav .nav-item .dropdown-menu li:hover .dropdown-item {
+  color: #06d6a0 !important;
 }
 
 @media (min-width: 768px) {
@@ -245,7 +268,7 @@
   padding: 10px;
   background-color: #ef476f;
   border-radius: 10px;
-  color: #06d6a0;
+  color: #ffd166;
 }
 #cart #cart-order {
   padding: 0;
@@ -258,6 +281,10 @@
 #cart #cart-order table tbody tr td a {
   text-decoration: none;
   cursor: pointer;
+}
+#cart #cart-order table tbody tr .total-price {
+  font-weight: bold;
+  font-size: 18px;
 }
 #cart #cart-payment {
   padding: 15px;
@@ -501,6 +528,61 @@
 }
 #footer .box-footer .developer a:hover {
   color: #ffd166;
+}
+
+#list {
+  padding: 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#list .box .title {
+  border: 2px solid #118ab2;
+  border-radius: 10px;
+  padding: 10px;
+  color: #118ab2;
+  font-size: 16px;
+  font-weight: bold;
+}
+#list .box a {
+  text-decoration: none;
+  color: #118ab2;
+}
+#list .chart {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+#info-box {
+  width: 100%;
+  min-height: 100px;
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+#info-box .box {
+  border: 2px solid #118ab2;
+  border-radius: 10px;
+  background-color: #118ab2;
+  font-size: 18px;
+  color: whitesmoke;
+  width: 100%;
+  height: 85px;
+  padding: 15px;
+}
+#info-box .box .title {
+  font-size: 16px;
+  font-weight: bold;
+}
+#info-box .box .message {
+  font-size: 15px;
+}
+#info-box .box .fa {
+  margin-bottom: 10px;
 }
 
 body {

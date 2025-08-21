@@ -51,7 +51,7 @@
         }
 
         #shortcut-icon {
-
+            width: 300px;
             // border: 1px solid green;
             a {
                 text-decoration: none;
@@ -68,6 +68,45 @@
             }
 
         }
+    }
+
+    .dashboard {
+
+        // border: 2px solid $color-1;
+        border-radius: 10px;
+        background-color: $color-5 !important;
+
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    color: whitesmoke !important;
+
+                    &:hover{
+                        color: $color-3 !important;
+                    }
+                }
+
+                .dropdown-menu{
+                    background-color: $color-5 !important;
+                    // z-index: 10;
+                    border: 2px solid whitesmoke;
+                    li{
+                        .dropdown-item{
+                            color: whitesmoke !important;
+                        }
+
+                        &:hover{
+                            .dropdown-item{
+                                color: $color-3 !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+
     }
 
 }

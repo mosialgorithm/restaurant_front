@@ -1,15 +1,21 @@
+// global
 @import "scss/variables";
 @import "scss/font";
-@import "scss/nav";
-@import "scss/modal";
-@import "scss/carousel";
-@import "scss/list_menu";
-@import "scss/menu";
-@import "scss/cart";
-@import "scss/contact_us";
-@import "scss/about_us";
-@import "scss/images-banner";
-@import "scss/footer";
+// home
+@import "scss/home/nav";
+@import "scss/home/modal";
+@import "scss/home/carousel";
+@import "scss/home/list_menu";
+@import "scss/home/menu";
+@import "scss/home/cart";
+@import "scss/home/contact_us";
+@import "scss/home/about_us";
+@import "scss/home/images-banner";
+@import "scss/home/footer";
+// dashboard
+@import "scss/dashboard/dash-index";
+@import "scss/dashboard/dash-list";
+@import "scss/dashboard/dash-info-box";
 
 
 

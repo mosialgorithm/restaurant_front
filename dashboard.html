@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رستوران میم :: </title>
+    <link rel="stylesheet" href="./assets/styles/bootstrap-reboot.rtl.min.css">
+    <link rel="stylesheet" href="./assets/styles/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./assets/styles/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+
+    <script defer src="./assets/scripts/bootstrap.bundle.min.js"></script>
+    <script src="./assets/scripts/chart.js"></script>
+</head>
+
+<body>
+    <!-- nav -->
+    <section id="nav" class="container my-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light dashboard">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                    aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/images/png/logo.png" width="50px" alt="">
+                </a>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./dashboard.html"> داشبورد</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                منوی کافه
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./menu.html">غذای اصلی</a></li>
+                                <li><a class="dropdown-item" href="./menu.html">پیش غذا </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./menu.html"> بستنی </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about-us.html">آشنایی با همکاران</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact-us.html" tabindex="-1" aria-disabled="true">تماس با
+                                ما</a>
+                        </li>
+                    </ul>
+                    <div id="shortcut-icon" class="d-flex">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#userModal">
+                            <span class="fa fa-user-circle-o fa-lg mx-2"></span>
+                            <span>مصطفی قربانی آرانی</span>
+                        </a>
+                        <a href="./cart.html" class="position-relative">
+                            <span class="fa fa-shopping-basket fa-lg mx-2"></span>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">5</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- end nav -->
+
+    <!-- info-box -->
+    <section id="info-box" class="container">
+        <div class="row g-2">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="box d-flex justify-content-between align-items-center">
+                    <div class="title d-flex flex-column justify-content-center align-items-center">
+                        <span class="fa fa-thumbs-up fa-2x"></span>
+                        <span>بیشترین سفارش</span>
+                    </div>
+                    <div class="message d-flex flex-column justify-content-center align-items-center">
+                        <span class="fw-bold">سوشی</span>
+                        <span class="mt-2">
+                            <i class="fw-bold">۱۰۰</i>
+                            <i>عدد</i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="box d-flex justify-content-between align-items-center">
+                    <div class="title d-flex flex-column justify-content-center align-items-center">
+                        <span class="fa fa-thumbs-down fa-2x"></span>
+                        <span> کمترین سفارش</span>
+                    </div>
+                    <div class="message d-flex flex-column justify-content-center align-items-center">
+                        <span class="fw-bold">سوشی</span>
+                        <span class="mt-2">
+                            <i class="fw-bold">۱۰</i>
+                            <i>عدد</i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="box d-flex justify-content-between align-items-center">
+                    <div class="title d-flex flex-column justify-content-center align-items-center">
+                        <span class="fa fa-money fa-2x"></span>
+                        <span> گرانترین موجودی</span>
+                    </div>
+                    <div class="message d-flex flex-column justify-content-center align-items-center">
+                        <span class="fw-bold">پلو گردن گوسفندی مجلسی</span>
+                        <span class="mt-2">
+                            <i class="fw-bold">۳۰۰۰۰۰۰</i>
+                            <i>تومان</i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="box d-flex justify-content-between align-items-center">
+                    <div class="title d-flex flex-column justify-content-center align-items-center">
+                        <span class="fa fa-dollar fa-2x"></span>
+                        <span>ارزانترین موجودی</span>
+                    </div>
+                    <div class="message d-flex flex-column justify-content-center align-items-center">
+                        <span class="fw-bold">قهوه اسپرسو</span>
+                        <span class="mt-2">
+                            <i class="fw-bold">۷۵۰۰۰</i>
+                            <i>تومان</i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end info-box -->
+
+    <!-- order-list -->
+    <section id="list" class="container">
+        <div class="row g-3">
+            <div class="col-12 col-md-6">
+                <div class="box">
+                    <p class="title">
+                        <span class="fa fa-rocket me-1"></span>
+                        <span>آخرین سفارشات</span>
+                    </p>
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">عکس</th>
+                                    <th scope="col">نام</th>
+                                    <th scope="col">تعداد</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="./assets/images/wide/food-4.jpg" class="img-fluid" width="100" alt="">
+                                    </td>
+                                    <td>ماهی پلو</td>
+                                    <td>۲</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./assets/images/wide/food-6.jpg" class="img-fluid" width="100" alt="">
+                                    </td>
+                                    <td>ماهی پلو</td>
+                                    <td>۲</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./assets/images/wide/food-5.jpg" class="img-fluid" width="100" alt="">
+                                    </td>
+                                    <td>ماهی پلو</td>
+                                    <td>۲</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <a href="#" class="d-flex flex-row-reverse">
+                        <span class="fa fa-plus-square fa-lg"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="box">
+                    <p class="title">
+                        <span class="fa fa-user-circle me-1"></span>
+                        <span>آخرین مشتری ها</span>
+                    </p>
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th scope="col">نام</th>
+                                    <th scope="col">شماره همراه</th>
+                                    <th scope="col">زمان</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p>مصطفی قربانی آرانی</p>
+                                    </td>
+                                    <td>
+                                        <p>۰۹۳۵۵۷۳۹۳۶۳</p>
+                                    </td>
+                                    <td>دقایقی پیش</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p> زهرا علوی</p>
+                                    </td>
+                                    <td>
+                                        <p>۰۹۳۵۵۷۳۹۳۶۳</p>
+                                    </td>
+                                    <td>دقایقی پیش</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>بی نام </p>
+                                    </td>
+                                    <td>
+                                        <p>۰۹۳۵۵۷۳۹۳۶۳</p>
+                                    </td>
+                                    <td>دقایقی پیش</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>بی نام </p>
+                                    </td>
+                                    <td>
+                                        <p>۰۹۳۵۵۷۳۹۳۶۳</p>
+                                    </td>
+                                    <td>دقایقی پیش</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <a href="#" class="d-flex flex-row-reverse">
+                        <span class="fa fa-plus-square fa-lg"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="box">
+                    <p class="title">
+                        <span class="fa fa-bar-chart"></span>
+                        <span>وضعیت خرید محصولات</span>
+                    </p>
+                    <div class="chart">
+                        <canvas id="bestSaleChart" width="100vw"></canvas>
+                    </div>
+                    <a href="#" class="d-flex flex-row-reverse">
+                        <span class="fa fa-plus-square fa-lg"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="box">
+                    <p class="title">
+                        <span class="fa fa-bar-chart"></span>
+                        <span>وضعیت خرید انواع محصولات</span>
+                    </p>
+                    <div class="chart">
+                        <canvas id="allProductChart" width="100vw"></canvas>
+                    </div>
+                    <a href="#" class="d-flex flex-row-reverse">
+                        <span class="fa fa-plus-square fa-lg"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end order-list -->
+    <script>
+        const ctx = document.getElementById('bestSaleChart');
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['کباب کوبیده', 'قهوه اسپرسو', 'ماهی پلو', 'بستنی سنتی', 'موهیتو', 'پیتزا مخصوص'],
+                datasets: [{
+                    label: 'درصد بیشترین سفارش ها',
+                    data: [12, 19, 3, 5, 2, 3],
+                    borderWidth: 1,
+                    backgroundColor: [
+                        '#118ab2'
+                    ]
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                },
+                Response: true,
+            }
+        });
+    </script>
+
+    <script>
+        const ctxx = document.getElementById('allProductChart');
+
+        new Chart(ctxx, {
+            type: 'doughnut',
+            data: {
+                labels: [
+                    'غذای اصلی',
+                    'بستنی ها',
+                    'قهوه جات',
+                    ' نوشیدنی سرد',
+                    ' نوشیدنی گرم',
+                ],
+                datasets: [{
+                    label: 'My First Dataset',
+                    data: [300, 50, 100, 80, 30],
+                    backgroundColor: [
+                        '#ef476f',
+                        '#06d6a0',
+                        '#073b4c87',
+                        '#ffd166',
+                        '#073b4c',
+                        '#073b4c87',
+                    ],
+                    hoverOffset: 4
+                }]
+            },
+            options:{
+                Response: true
+            },
+            
+        });
+    </script>
+
+</body>
+
+</html>
