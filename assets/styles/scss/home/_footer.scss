@@ -12,6 +12,8 @@
         }
     }
 
+    
+
     .box-footer {
         // border: 1px solid red;
         height: 400px;
@@ -138,6 +140,29 @@
                 &:hover{
                     color: $color-2;
                     
+                }
+            }
+        }
+    }
+
+    .dashboard{
+        // border: 1px solid red;
+        height: 60px !important;
+        // background-color: $color-5;
+        
+        .developer{
+            
+            p{
+                // padding-top: 25px;
+                span{
+                    color: $color-5;
+                }
+                a{
+                    color: $color-5;
+
+                    &:hover{
+                        color: $color-1;
+                    }
                 }
             }
         }

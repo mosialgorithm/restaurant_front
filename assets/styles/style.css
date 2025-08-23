@@ -57,19 +57,29 @@
 #nav .navbar .navbar-nav .nav-item .dropdown-menu li a.dropdown-item {
   color: #ffd166;
 }
-#nav .navbar #shortcut-icon {
-  width: 300px;
-}
 #nav .navbar #shortcut-icon a {
   text-decoration: none;
   color: #ef476f;
+  width: 35px;
+  height: 35px;
 }
 #nav .navbar #shortcut-icon a:hover {
-  color: #06d6a0;
   font-weight: bold;
 }
 #nav .navbar #shortcut-icon a .badge {
   background-color: #ef476f !important;
+}
+#nav .navbar #shortcut-icon .avatar img {
+  width: 35px !important;
+  border-radius: 50% !important;
+  margin-left: 2px;
+}
+#nav .navbar #shortcut-icon .exit {
+  padding-top: 5px;
+  color: white;
+}
+#nav .navbar #shortcut-icon .exit:hover {
+  color: red;
 }
 #nav .dashboard {
   border-radius: 10px;
@@ -77,13 +87,13 @@
 }
 #nav .dashboard .navbar-nav .nav-item .nav-link {
   color: whitesmoke !important;
+  font-weight: normal;
 }
 #nav .dashboard .navbar-nav .nav-item .nav-link:hover {
-  color: #06d6a0 !important;
+  font-weight: bold;
 }
 #nav .dashboard .navbar-nav .nav-item .dropdown-menu {
   background-color: #073b4c !important;
-  border: 2px solid whitesmoke;
 }
 #nav .dashboard .navbar-nav .nav-item .dropdown-menu li .dropdown-item {
   color: whitesmoke !important;
@@ -529,6 +539,18 @@
 #footer .box-footer .developer a:hover {
   color: #ffd166;
 }
+#footer .dashboard {
+  height: 60px !important;
+}
+#footer .dashboard .developer p span {
+  color: #073b4c;
+}
+#footer .dashboard .developer p a {
+  color: #073b4c;
+}
+#footer .dashboard .developer p a:hover {
+  color: #ef476f;
+}
 
 #list {
   padding: 0;
@@ -540,7 +562,7 @@
   border-radius: 10px;
   padding: 10px;
   color: #118ab2;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
 }
 #list .box a {
@@ -571,7 +593,7 @@
   font-size: 18px;
   color: whitesmoke;
   width: 100%;
-  height: 85px;
+  height: 95px;
   padding: 15px;
 }
 #info-box .box .title {
@@ -583,6 +605,122 @@
 }
 #info-box .box .fa {
   margin-bottom: 10px;
+}
+
+#users-list {
+  padding: 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#users-list p {
+  border: 2px solid #118ab2;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #118ab2;
+}
+#users-list table tbody tr td {
+  vertical-align: middle;
+}
+#users-list table tbody tr td img {
+  width: 55px;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  form.search {
+    width: 500px;
+  }
+}
+#user-info {
+  padding: 0;
+  margin-bottom: 50px;
+}
+#user-info .box {
+  padding: 0;
+  margin: 0;
+  min-height: 400px;
+}
+#user-info .box .title {
+  border: 2px solid #118ab2;
+  border-radius: 10px;
+  color: #118ab2;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+}
+#user-info .box .information {
+  border: 1px solid #118ab2;
+  border-radius: 10px;
+  padding: 10px;
+}
+#user-info .box .information img {
+  width: 200px;
+  border-radius: 10px;
+}
+#user-info .box .information label .fa {
+  font-weight: bold;
+  color: #073b4c;
+  margin-left: 5px;
+  font-size: 18px;
+}
+#user-info .box .information .info {
+  font-weight: bold;
+}
+
+#menu-list-all {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#menu-list-all .box .box-title {
+  border: 2px solid #118ab2;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+#menu-list-all .box .box-title p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #118ab2;
+}
+#menu-list-all .box .box-body table tbody tr td img {
+  width: 100px;
+  border-radius: 10px;
+}
+
+#authentication {
+  height: 100vh;
+}
+#authentication .auth {
+  margin-top: 100px;
+}
+#authentication .auth .auth-header {
+  text-align: center;
+}
+#authentication .auth .auth-header img {
+  width: 100px;
+}
+#authentication .auth .auth-header p {
+  background-color: #118ab2;
+  height: 50px;
+  border-radius: 10px;
+  padding: 8px;
+  font-size: 22px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+#authentication .auth .auth-body {
+  background-color: white;
+  border: 2px solid #118ab2;
+  border-radius: 10px;
+  padding: 10px;
+  padding-top: 30px;
+  margin-top: -10px;
+}
+#authentication .auth .auth-body a {
+  text-decoration: none;
 }
 
 body {

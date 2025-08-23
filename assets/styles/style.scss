@@ -1,6 +1,7 @@
 // global
 @import "scss/variables";
 @import "scss/font";
+
 // home
 @import "scss/home/nav";
 @import "scss/home/modal";
@@ -12,11 +13,17 @@
 @import "scss/home/about_us";
 @import "scss/home/images-banner";
 @import "scss/home/footer";
+
 // dashboard
 @import "scss/dashboard/dash-index";
 @import "scss/dashboard/dash-list";
 @import "scss/dashboard/dash-info-box";
+@import "scss/dashboard/users-list";
+@import "scss/dashboard/user-info";
+@import "scss/dashboard/menu-list-all";
 
+// authentication
+@import "scss/auth/authentication";
 
 
 
